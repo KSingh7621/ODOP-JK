@@ -2,6 +2,37 @@
 * {
   margin: 0px;
   padding: 0px;
+  /* width: 100%; */
+}
+
+.header{
+  background-color: #fa6508 ;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+}
+#bharat-img{ mix-blend-mode: multiply;
+filter: contrast(1);}
+
+#main-logo{
+  width: 160px;
+  object-fit: cover;
+  margin-left: 20px;
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  align-items: center;
+  height: 75px;
+}
+#jklogo{
+  padding: 2px;
+}
+.left-logo img{
+  margin: 10px;
 }
 
 #topLogoContainer {
@@ -18,8 +49,13 @@
 }
 #miiLogo img {
   margin-left: 10px;
-}
 
+}
+#ministerImages img{
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+}
 .extraLogo {
   border-radius: 50px;
   height: 70px;
@@ -43,30 +79,17 @@
   color: white;
   border: none;
 }
+.welcome{
 
-#midContainer {
-  height: 490px;
-  border: 2px solid red;
-  /* background: url(Resources/Poster.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
+}
+.midContainer {
+  margin-top: 200px;
 }
 
-/* #stateWelcomeDiv {
-  height: 600px;
-  border: 2px solid blue;
-  background-color: aquamarine;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center;
-  display: flex;
-  justify-content: center; 
-} */
+
 
 #stateWelcomeDiv {
   /* height: 600px; */
-  font-family: 'Croissant One', cursive;
   border: 2px solid blue;
   background-color: rgb(134 207 111);
   text-align: center;
@@ -79,11 +102,6 @@
   /* align-items: center;
   display: flex;
   justify-content: center; */
-}
-#ministerImages img {
-  height: 300px;
-  width: 300px;
-  border-radius: 5px;
 }
 
 #posterDiv {
@@ -107,24 +125,16 @@
   /* background-color: rgb(10, 77, 139); */
   display: flex;
   text-align: center;
+  align-items: center;
 }
 
 .newsDiv {
   height: 90%;
   width: 25%;
-  /* margin: 10px; */
+  margin: 10px;
   border: 2px solid red;
-}
-
-.newsDiv ul {
-  padding: 5px;
-}
-
-.newsDiv ul li {
-  margin: 3px;
-  border-bottom: 1px solid grey;
-  /* border-style: dotted; */
-  list-style: none;
+  text-align: justify;
+  padding: 20px;
 }
 
 #map {
@@ -143,22 +153,28 @@
 #catalogDiv {
   display: flex;
   flex-wrap: wrap;
-  background-color: grey;
 }
+.card:hover{
+  box-shadow: 0px 0px 4px 2px rgb(149, 149, 83);
+  opacity: 0.8;
+  cursor: pointer;
 
+}
 .card {
-  height: 18rem;
+  padding: 2px;
+  height: 21rem;
   text-align: center;
   align-items: center;
-  margin: 8px 10px 0px 10px;
+  margin: 8px 20px 15px 50px;
 }
 .card img {
-  height: 178px;
+  height: 220px;
   width: 220px;
 }
 
 #footer {
   background-color: rgb(140, 135, 135);
+  margin-top: 10px;
 }
 
 #footer div {
@@ -179,4 +195,14 @@
 #footer div ul li a {
   text-decoration: none;
   color: white;
+}
+.welcome{
+  font-family: 'Croissant One', cursive;
+    font-weight: bolder;
+    font-size: 51px;
+}
+.district{
+  font-family: ui-monospace;
+  font-weight: bolder;
+  color: maroon;
 }
